@@ -1,0 +1,13 @@
+Q. What is cherry-pick? Explain the use case of it also write steps to do it.
+
+A. Cherry-Pick is a method in git using which we can merge only upto specific commits from new branch instead of whole branch.
+
+Use Cases:
+  When we made a commit by mistake, we can simply cherry pick the previous commit.
+  When we want to merge only specific features from another branch.
+  Developing another branch from specific point.
+  To avoid merge conflicts.
+
+Steps:
+  Syntax: git cherry-pick <commit id>
+  Checkout the branch we want to merge into and run cherry pick syntax with commit id we want to merge.
