@@ -1,0 +1,12 @@
+Q. Difference between --force push and --force-with-lease, You have to show the use of both, also you have to show in what scenario --force-with-lease is used?
+
+A. --force push: Force push will push all your local code to remote repository and overwrite it.
+While on the other hand, Force with lease option will first check if our local code is overwriting remote code,
+if yes, then the push will be rejected and if not then the push will succeed.
+Force with lease assures to not overwrite content of remote repository.
+
+Scenarios:
+  Force with lease should be used always. If other team mate commits any changes to repo and our local repo don't have those change,
+  force with lease will notify us about it at the time of push. Force push will overwrite that team mate's content with ours.
+
+  Force can be used if we want to overwrite remote repository with our code.
