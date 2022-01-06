@@ -1,0 +1,10 @@
+Q. How to set multiple remote repositories for the same project? Explain the use case. you should have a working demo of it.
+
+A. We can set multiple remote repositories for same local project by adding different remote repos using syntax as following:
+  git remote add <name> <url>
+  ex. git remote add origin <url> and git remote add second <url>
+or we can add two different remote repo information in git config file manually.
+
+Use Cases:
+  When we have 2 or more different remote repos for same project.
+  Different repos for issue and production code.
