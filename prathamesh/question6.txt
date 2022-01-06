@@ -1,0 +1,10 @@
+Q. How to un stage changes from the staged area. write command for it.
+
+A. We can remove staged files by removing it from staging area and cached memory.
+We can do it in 2 ways.
+We can remove file from staging area using command `git rm <file name> --cached`.
+This will remove file from staging area but not from working directory.
+
+Otherwise we can use git reset method to un stage the file.
+We can do it by using following command: `git reset HEAD <file name>`.
+It will reset our directory to last commit and will remove files from staging area.
